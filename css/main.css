@@ -1,0 +1,9 @@
+:root{
+    --main-bg-color : #F7F8FA;
+}
+body{
+    background: var(--main-bg-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
