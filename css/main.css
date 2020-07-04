@@ -93,5 +93,39 @@ body{
     position: absolute;
     right: 30px;
 }
-
-
+/* Heoro image */
+.showcase{
+    position: relative;
+    height: 500px;
+    background-color: antiquewhite;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/showcase1.jpg') no-repeat center ;
+    border-bottom: 2px solid gray;
+    background-size: cover;
+    margin-bottom: 70px;
+}
+.showcase .hero-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.showcase .hero-text{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Roboto,sans-serif;
+    margin: 0;
+}
+.showcase .hero-text h1{
+    font-weight: bold;
+    font-family: Roboto;
+}
+.showcase .hero-text p{
+    font-size: 16px;
+    font-weight: lighter;
+}
