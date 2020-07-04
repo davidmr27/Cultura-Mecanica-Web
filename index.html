@@ -9,27 +9,32 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header>
-        <div class="nav-brand brand">
-            <a href="#">
-
-            </a>
-        </div>
-        <nav>
+    <header id="header">
+        <nav class="nav-bar">
             <ul>
-                <li><a href="#">Articulos</a></li>
-                <li><a href="#">Cursos</a></li>
+                <li class="item"><a href="#">
+                <span class="iconify" data-icon="bi:newspaper" data-inline="false"></span><br>
+                    Articulos</a></li>
+                <li class="item"><a href="#">
+                    <span class="iconify" data-icon="fa-solid:university" data-inline="false"></span><br>
+                    Cursos</a></li>
             </ul>
         </nav>
+        <div class="nav-brand brand">
+            <a href="#">
+                <img src="./img/logo.png" alt="Cultura Mecanica">
+            </a> 
+        </div>
         <div class="nav-user-action">
             <div class="login">
-                <a href="#">Iniciar Sesión</a>
+                <a href="#" class="btn-link">Iniciar Sesión</a>
             </div>
             <div class="registre">
-                <a href="#">Resgístra</a>
+                <a href="#" class="btn-link">Resgístrate</a>
             </div>
             <form action="" method="post">
                 <input type="text" id="buscador" name="search" placeholder="Buscar contenido">
+                <span class="iconify" data-icon="ei:search" data-inline="false"></span>
             </form>
         </div>
     </header>

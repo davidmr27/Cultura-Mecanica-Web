@@ -1,9 +1,97 @@
 :root{
     --main-bg-color : #F7F8FA;
+    --bg-headfot : #100E17;
+    --color-border: #AAAAAA;
 }
 body{
     background: var(--main-bg-color);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family: Roboto, Lato, sans-serif;
+    box-sizing: border-box;
 }
+#header{
+    background-color: var(--bg-headfot);
+    display: flex;
+    border-bottom: 2px solid var(--color-border);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+#header .nav-bar{
+   color: white;
+   width: 300px;
+} 
+#header .nav-bar ul{
+    list-style: none;
+    color: white;
+    font-family: 16px;  
+    padding: 0;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.nav-bar ul .item{
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.nav-bar ul .item a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 5px 15px;
+    text-align: center;
+}
+.iconify{
+    font-size: 30px;
+    margin: 0 auto;
+}
+/* Estilo para el Logo */
+#header .nav-brand a > img{
+    max-height: 100px;
+    
+}
+/* Estilo para boton en la barra de ajuste */
+#header .nav-user-action{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header .nav-user-action .btn-link{
+    margin-right: 10px;
+    padding: 15px 10px;
+    background-color: #0061A7;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+#header .nav-user-action .registre .btn-link{
+    background-color: #FC611C;
+    font-weight: bold;
+}
+#header .nav-user-action form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#header .nav-user-action input[type=text]{
+    padding: 15px 5px;
+    width: 250px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+}
+#header .nav-user-action form .iconify{
+    position: absolute;
+    right: 30px;
+}
+
+
