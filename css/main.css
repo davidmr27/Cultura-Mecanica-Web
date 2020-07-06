@@ -225,6 +225,7 @@ a{
     align-content: center;
     align-items: center;
     font-size: 18px;
+    margin-bottom: 10px;
 }
 .post-body .post-info .post-autor{
     margin-right: 70px;
@@ -252,4 +253,45 @@ a{
 }
 .post-body .post-abstract{
     text-align: justify;
+    margin-bottom: 20px;
+}
+/* Etiquetas */
+.post-body .post-target{
+    display: flex;
+    padding: 0 1px;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+.post-body .post-target div{
+    margin-right: 15px;
+    padding: 5px 10px;
+    border: 2px solid #0061A7;
+    border-radius: 7px;
+    font-size: 18px;
+}
+.post-body .post-target .trget{
+    border: 2px solid #0061A7;
+    border-radius: 7px;
+    
+}
+.post-body .post-target .trget:nth-child(even){
+    border: 2px solid #FC611C;
+}
+.post-body .post-target .comment{
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    color: #535353;
+    border: 2px solid #666666d8;
+}
+.post-body .post-target .comment .iconify{
+    color: #535353;
+    font-size: 20px;
+    padding: 0;
+}
+.comment p {
+    margin: 0;
 }
