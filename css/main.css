@@ -414,3 +414,28 @@ form .form-title h2{
     border: 1px solid #2FCCA5;
     color: #2FCCA5;
 }
+footer{
+    background-color: #100E17;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .footer-brand a img{
+    max-width: 200px;
+}
+footer .social-media{
+    margin-bottom: 15px;
+}
+footer .social-media a{
+    color: white;
+    margin-right: 10px;
+}
+footer .more-inf a,
+footer .copy-right{
+    color: white;
+}
+footer .social-media a .iconify{
+    font-size: 3rem;
+}
