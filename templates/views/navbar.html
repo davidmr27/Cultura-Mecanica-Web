@@ -1,0 +1,34 @@
+{% block navbar%}
+<header id="header">
+    <nav class="nav-bar">
+        <ul>
+            <li class="item"><a href="#">
+            <span class="iconify" data-icon="bi:newspaper" data-inline="false"></span><br>
+                Articulos</a></li>
+            <li class="item"><a href="#">
+                <span class="iconify" data-icon="fa-solid:university" data-inline="false"></span><br>
+                Cursos</a></li>
+        </ul>
+    </nav>
+    <div class="nav-brand brand">
+        <a href="#">
+            <img src="{{ url_for('static', filename='img/logo.png')}}" alt="Cultura Mecanica">
+        </a> 
+    </div>
+    <div class="nav-user-action">
+        <div class="login">
+            <a href="{{ url_for('login') }}" class="btn-link">Iniciar Sesión</a>
+            <!-- <button id="btn-login" class="btn-link">Iniciar sesión</button> -->
+        </div>
+        <div class="registre">
+            <a href="{{ url_for('signup') }}" class="btn-link">Resgístrate</a>
+            <!-- <button id="btn-rtgs" class="btn-link"> Regístrate</button> -->
+        </div>
+       
+        <form action="" method="post">
+            <input type="text" id="buscador" name="search" placeholder="Buscar contenido">
+            <span class="iconify" data-icon="ei:search" data-inline="false"></span>
+        </form>
+    </div>
+</header>
+{% endblock %}
