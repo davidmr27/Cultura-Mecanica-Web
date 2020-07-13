@@ -1,0 +1,444 @@
+:root{
+    --main-bg-color : #F7F8FA;
+    --bg-headfot : #100E17;
+    --color-border: #AAAAAA;
+    --font-df : Lato, Roboto, sans-serif;
+}
+body{
+    background: var(--main-bg-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto, Lato, sans-serif;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.container{
+    padding: 0 40px;
+    margin-bottom: 50px;
+}
+#header{
+    background-color: var(--bg-headfot);
+    display: flex;
+    border-bottom: 2px solid var(--color-border);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+#header.views-form{
+    justify-content: center;
+    margin-bottom: 70px;
+}
+#header .nav-bar{
+   color: white;
+   width: 300px;
+} 
+#header .nav-bar ul{
+    list-style: none;
+    color: white;
+    font-family: 16px;  
+    padding: 0;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.nav-bar ul .item{
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.nav-bar ul .item a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 5px 15px;
+    text-align: center;
+}
+.iconify{
+    font-size: 30px;
+    margin: 0 auto;
+}
+/* Estilo para el Logo */
+#header .nav-brand a > img{
+    max-height: 100px;
+    
+}
+/* Estilo para boton en la barra de ajuste */
+#header .nav-user-action{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header .nav-user-action .btn-link{
+    margin-right: 10px;
+    padding: 15px 10px;
+    background-color: #0061A7;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+}
+#header .nav-user-action .registre .btn-link{
+    background-color: #FC611C;
+    font-weight: bold;
+}
+#header .nav-user-action form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#header .nav-user-action input[type=text]{
+    padding: 15px 5px;
+    width: 250px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+}
+#header .nav-user-action form .iconify{
+    position: absolute;
+    right: 30px;
+}
+/* Heoro image */
+.showcase{
+    position: relative;
+    height: 500px;
+    background-color: antiquewhite;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/showcase1.jpg') no-repeat center ;
+    border-bottom: 2px solid gray;
+    background-size: cover;
+    margin-bottom: 70px;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+}
+.showcase .hero-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.showcase .hero-text{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Roboto,sans-serif;
+    margin: 0;
+}
+.showcase .hero-text h1{
+    font-weight: bold;
+    font-family: Roboto;
+}
+.showcase .hero-text p{
+    font-size: 16px;
+    font-weight: lighter;
+}
+/* Category section */
+.category{
+    display: flex;
+    width: 100%;
+}
+.category .ctg-list{
+    list-style: none;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+}
+.category .ctg-list .ctg-list-item{
+    padding: 18px 40px;
+    color: white;   
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #003265;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    transition: ease .2s;
+    flex: 1 250px;
+}
+.category .ctg-list .ctg-list-item > a{
+   width: 100%;
+   height: 100%;
+   display: block;
+   text-align: center;
+}
+.category .ctg-list .ctg-list-item:hover{
+    background-color: #0061A7;
+    transition: ease .2s;
+    box-shadow: 2px 3px 5px 5px rgb(158, 158, 158);
+}
+.ctg-list .ctg-list-item > a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;;
+    font-weight: bold;
+    text-align: center;
+    font-family: Lato;
+    width: 100%;
+    letter-spacing: 1.5px;
+    opacity: 0.8;
+} 
+/* Contenido */
+.content{
+    display: flex;
+}
+.content .cards-post{
+    display: flex;
+    flex-direction: column;
+}
+.content .cards-post > .post {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    width: 70%;
+}
+.cards-post > .post .post-img{
+    width: 100%;
+    text-align: center;
+    margin-right: 15px;
+}
+.cards-post > .post .post-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cards-post .post-body{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+.cards-post .post-body .post-section{
+    padding-top: 15px;
+    margin-bottom: 10px;
+    font-family: var(--font-df);    
+    font-weight: bold;
+    font-size: 18px;
+}
+.cards-post .post-body .post-info{
+    display: flex;
+    font-family: var(--font-df);
+    align-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.post-body .post-info .post-autor{
+    margin-right: 70px;
+}
+.post-body .post-info .post-dat{
+    padding: 10px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+
+}
+.post-body .post-info .iconify{
+    font-size: 26px;
+    margin-right: 5px;
+}
+.post-body .post-title{
+    font-family: Roboto, Lato, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.post-body .post-title h3{
+    margin: 0;
+    margin-bottom: 15px;
+}
+.post-body .post-abstract{
+    text-align: justify;
+    margin-bottom: 20px;
+}
+/* Etiquetas */
+.post-body .post-target{
+    display: flex;
+    padding: 0 1px;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+.post-body .post-target div{
+    margin-right: 15px;
+    padding: 5px 10px;
+    border: 2px solid #0061A7;
+    border-radius: 7px;
+    font-size: 18px;
+}
+.post-body .post-target .trget{
+    border: 2px solid #0061A7;
+    border-radius: 7px;
+    
+}
+.post-body .post-target .trget:nth-child(even){
+    border: 2px solid #FC611C;
+}
+.post-body .post-target .comment{
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    color: #535353;
+    border: 2px solid #666666d8;
+}
+.post-body .post-target .comment .iconify{
+    color: #535353;
+    font-size: 20px;
+    padding: 0;
+}
+.comment p {
+    margin: 0;
+}
+/* View Form Login and Register */
+.views-register{
+    padding-top: 60px;
+}
+.form-container{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: #F7F7F7;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    border: 2px solid rgb(202, 202, 202);
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px 5px rgb(158, 158, 158);
+}
+.form-container form{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 25px;
+}
+.form-container form .form-title{
+    align-self: flex-start;
+    margin-left: 32px;
+}
+form .form-title h2{
+    font-family: var(--font-df);
+    font-weight: 400;
+    font-size: 25px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+.form-container .form-body > .form-input{
+    margin-bottom: 15px;
+}
+.form-body{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.form-input input[type=text], 
+.form-input input[type=email], 
+.form-input input[type=password]{
+    padding: 15px 15px 15px 5px;
+    text-align: left;
+    font-size: 18px;
+    color: rgb(88, 88, 88);
+    border-radius: 5px;
+    border: 2px solid rgb(156, 156, 156);
+    box-sizing: border-box;
+    width: 100%;
+    outline: none;
+}
+.form-input input[type=text].email.form-invalid{
+    border: 2px solid #CD3952;
+}
+.form-input.login input[type=text],
+.form-input.login input[type=password]{
+    width: 500px;
+}
+.form-input input[type=text]:hover, 
+.form-input input[type=email]:hover, 
+.form-input input[type=password]:hover{
+    border: 2px solid #0095ff
+}
+.form-input input[type=text]:focus,
+.form-input input[type=email]:focus,
+.form-input input[type=password]:focus{
+    border: 2px solid #0095ff
+}
+.form-input.fullname input[type=text]{
+    width: 49.5%;
+}
+.form-input input[type=submit]{
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    font-size: 20px;
+    background-color: #CD3952;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: ease .5s;
+}
+.form-input input[type=submit]:hover{
+    background-color: #FC611C;
+    box-shadow: 0 0 5px rgb(238, 104, 81);
+}
+.form-footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-footer .footer-account{
+    margin-bottom: 15px;
+}
+.form-footer .footer-account span{
+    color: #535353;
+    font-size: 18px;
+}
+.form-footer .footer-account a{
+    display: block;
+    background-color: white;
+    width: 450px;
+    padding: 10px 10px  ;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #2FCCA5;
+    color: #2FCCA5;
+}
+footer{
+    background-color: #100E17;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .footer-brand a img{
+    max-width: 200px;
+}
+footer .social-media{
+    margin-bottom: 15px;
+}
+footer .social-media a{
+    color: white;
+    margin-right: 10px;
+}
+footer .more-inf a,
+footer .copy-right{
+    color: white;
+}
+footer .social-media a .iconify{
+    font-size: 3rem;
+}

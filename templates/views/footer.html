@@ -1,0 +1,28 @@
+{% block footer %}
+<!-- TODO: Faltan los enlaces a las redes sociales -->
+<footer>
+    <div class="footer-brand nav-brand">
+        <a href="#" class="brand">
+            <img src="{{ url_for('static', filename='img/logo.png')}}" alt="Cultura Mecanica" width="100%">
+        </a>
+    </div>
+    <div class="social-media">
+        <a href="#">
+            <span class="iconify" data-icon="ant-design:github-filled" data-inline="false"></span>
+        </a>
+        <a href="">
+            <span class="iconify" data-icon="ant-design:twitter-outlined" data-inline="false"></span>
+        </a>
+        <a href="">
+            <span class="iconify" data-icon="ant-design:instagram-filled" data-inline="false"></span>
+        </a>
+    </div>
+    <div class="more-inf">
+        <a href="#" class="btn btn-info" role="button">Contacto</a>
+        <a href="#" class="btn btn-info" role="button">Nosotros</a>
+    </div>
+    <div class="copy-right">
+        <p>Cultura Mecanica Copyright&copy; 2020 | Ingenieri de Software</p>
+    </div>
+</footer>
+{% endblock %}

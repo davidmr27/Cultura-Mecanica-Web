@@ -1,0 +1,51 @@
+{% extends "base.html"%}
+{% include "views/alt_navbar.html"%}
+{% block body %}
+<main>
+    <div class="form-container">
+        <form action="" method="POST">
+            <div class="form-title">
+                <h2>Registro de usuario</h2>
+            </div>
+            <div class="form-body">
+                <div class="form-input fullname">
+                   {{ form.name() }}
+                   {{ form.lastname() }}
+                </div>
+                <div class="form-input">
+                    <!-- <input type="email" name="email" id="email" placeholder="Correo eléctronico"> -->
+                    {% if form.email.errors %}
+                        {{ form.email(class="email form-invalid") }}
+                    {% else %}
+                        {{ form.email() }}
+                    {% endif %}
+                </div>
+                <div class="form-input">
+                    <!-- <input type="password" name="password" id="passwrd" placeholder="Contraseña"> -->
+                    {{ form.password() }}
+                </div>
+                <div class="form-input">
+                    <!-- <input type="password" name="conf-password" id="conf-pass" placeholder="Confirme contraseña"> -->
+                    {{ form.conf_pass() }}
+                </div>
+                <div class="form-input">
+                    <!-- <input type="text" name="username" id="" placeholder="Nombre de usuario"> -->
+                    {{ form.username() }}
+                </div>
+                <div class="form-input">
+                    <!-- <input type="submit" value="Crear cuenta" name="signup"> -->
+                    {{ form.submit() }}
+                </div>
+            </div>
+            <div class="form-footer">
+                <div class="footer-account">
+                    <span>¿Ya tienes tú cuenta?</span>
+                </div>
+                <div class="footer-account link">
+                    <a href="{{ url_for('login') }}">Iniciar sesión</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</main>
+{% endblock %}
