@@ -3,29 +3,38 @@
 {% block body %}
 <main>
     <div class="form-container">
-        <form action="">
+        <form action="" method="POST">
             <div class="form-title">
                 <h2>Registro de usuario</h2>
             </div>
             <div class="form-body">
                 <div class="form-input fullname">
-                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-                    <input type="text" name="apellido" id="apell" placeholder="Apellido">
+                   {{ form.name() }}
+                   {{ form.lastname() }}
                 </div>
                 <div class="form-input">
-                    <input type="email" name="email" id="email" placeholder="Correo eléctronico">
+                    <!-- <input type="email" name="email" id="email" placeholder="Correo eléctronico"> -->
+                    {% if form.email.errors %}
+                        {{ form.email(class="email form-invalid") }}
+                    {% else %}
+                        {{ form.email() }}
+                    {% endif %}
                 </div>
                 <div class="form-input">
-                    <input type="password" name="pass" id="passwrd" placeholder="Contraseña">
+                    <!-- <input type="password" name="password" id="passwrd" placeholder="Contraseña"> -->
+                    {{ form.password() }}
                 </div>
                 <div class="form-input">
-                    <input type="password" name="conf-pass" id="conf-pass" placeholder="Confirme contraseña">
+                    <!-- <input type="password" name="conf-password" id="conf-pass" placeholder="Confirme contraseña"> -->
+                    {{ form.conf_pass() }}
                 </div>
                 <div class="form-input">
-                    <input type="text" name="" id="" placeholder="Nombre de usuario">
+                    <!-- <input type="text" name="username" id="" placeholder="Nombre de usuario"> -->
+                    {{ form.username() }}
                 </div>
                 <div class="form-input">
-                    <input type="submit" value="Crear cuenta">
+                    <!-- <input type="submit" value="Crear cuenta" name="signup"> -->
+                    {{ form.submit() }}
                 </div>
             </div>
             <div class="form-footer">

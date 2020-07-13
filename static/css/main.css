@@ -350,12 +350,15 @@ form .form-title h2{
     padding: 15px 15px 15px 5px;
     text-align: left;
     font-size: 18px;
-    color: dimgray;
+    color: rgb(88, 88, 88);
     border-radius: 5px;
-    border: 2px solid rgb(168, 168, 168);
+    border: 2px solid rgb(156, 156, 156);
     box-sizing: border-box;
     width: 100%;
     outline: none;
+}
+.form-input input[type=text].email.form-invalid{
+    border: 2px solid #CD3952;
 }
 .form-input.login input[type=text],
 .form-input.login input[type=password]{
